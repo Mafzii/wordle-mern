@@ -1,3 +1,11 @@
+Worlde project developed using the MERN stack. 
+Functionalities: 
+- Sign Up
+- Login
+- Game
+- History (to be added)
+- Leaderboard (to be added)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
