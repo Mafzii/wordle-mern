@@ -26,9 +26,6 @@ const Login = () => {
             password: password
         };
 
-        const newState = {
-            username: username
-        }
         console.log(User)
 
         axios.get('http://localhost:8000/users')
@@ -39,13 +36,6 @@ const Login = () => {
                     for (let i=0; i<users.length; i++) {
                         if (users[i].username == User.username) {
                             if (users[i].password == User.password) {
-                                axios.post('http://localhost:8000/states/add', newState)
-                                    .then(res => {
-                                        console.log(res.data)
-                                    })
-                                    .catch(err => {
-                                        console.log(err)
-                                    });
                                 navigate('/home', {state:{username:User.username}});
                             }
                         }
@@ -80,9 +70,6 @@ const Login = () => {
 
                 <button className="item" type="submit">Log In</button>
         </form>
-        <Link to = '/signup'>
-            <button className="button" type="submit">Go to Sign Up</button>
-        </Link>
     </div>
     )
 

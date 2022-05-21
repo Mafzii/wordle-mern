@@ -20,10 +20,10 @@ connection.once('open', () => {
 })
 
 const usersRouter = require('./routes/users');
-const statesRouter = require('./routes/states')
+const historyRouter = require('./routes/history')
 
 app.use('/users', usersRouter);
-app.use('/states', statesRouter)
+app.use('/hist', historyRouter)
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

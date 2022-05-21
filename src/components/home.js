@@ -17,6 +17,10 @@ const Home = () => {
         navigate('/game', {state:{username:location.state.username}})
     }
 
+    const handleHist = () => {
+        navigate('/history', {state:{username:location.state.username}})
+    }
+
     return (
         <div>
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -30,7 +34,7 @@ const Home = () => {
                 <a className="nav-link" onClick={handleGame} >Play Game</a>
                 </li>
                 <li className="navbar-item">
-                <Link to="/history" className="nav-link">History</Link>
+                <a className="nav-link" onClick={handleHist} >History</a>
                 </li>
                 <li className="navbar-item">
                 <a className="nav-link" onClick={handleLogout} >Logout</a>
