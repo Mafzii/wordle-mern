@@ -3,8 +3,7 @@ Functionalities:
 - Sign Up
 - Login
 - Game
-- History (to be added)
-- Leaderboard (to be added)
+- History
 
 # Getting Started with Create React App
 
