@@ -1,4 +1,4 @@
-Worlde project developed using the MERN stack. 
+Wordle project developed using the MERN stack. 
 Functionalities: 
 - Sign Up
 - Login
